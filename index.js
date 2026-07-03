@@ -1,6 +1,7 @@
-require('dotenv').config();
 const dns = require('dns');
 dns.setDefaultResultOrder('ipv4first'); // Force IPv4 to fix Render's IPv6 issue with Gmail
+require('dotenv').config();
+
 
 const express = require('express');
 const cors = require('cors');
